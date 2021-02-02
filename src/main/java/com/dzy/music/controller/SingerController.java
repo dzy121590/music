@@ -77,7 +77,6 @@ public class SingerController {
         String id = request.getParameter("id").trim();
         String name = request.getParameter("name").trim();
         String sex = request.getParameter("sex").trim();
-        String pic = request.getParameter("pic").trim();
         String birth = request.getParameter("birth").trim();
         String location = request.getParameter("location").trim();
         String introduction = request.getParameter("introduction").trim();
@@ -93,7 +92,6 @@ public class SingerController {
         singer.setId(Integer.parseInt(id));
         singer.setName(name);
         singer.setSex(new Byte(sex));
-        singer.setPic(pic);
         singer.setBirth(birthDate);
         singer.setLocation(location);
         singer.setIntroduction(introduction);
