@@ -6,6 +6,7 @@
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
     </resultMap>
+
     <select id="veriftyPassword" resultType="java.lang.Integer">
         select
         count(*)

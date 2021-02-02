@@ -10,9 +10,9 @@
         <result column="location" jdbcType="VARCHAR" property="location"/>
         <result column="introduction" jdbcType="VARCHAR" property="introduction"/>
     </resultMap>
-    <select id="Base_Column_List">
+    <sql id="Base_Column_List">
         id,name,sex,pic,birth,location,introduction
-    </select>
+    </sql>
     <insert id="insert" parameterType="com.dzy.music.domain.Singer">
         insert into singer
         <trim prefix="(" suffix=")" suffixOverrides=",">
