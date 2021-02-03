@@ -121,7 +121,7 @@
         from song where name like #{name}
     </select>
 
-    <select id="selectOfSingerId" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
+    <select id="selectOfSingerId" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer">
         select
         <include refid="Blob_Column_List"/>
         from song where singer_id = #{singerId}

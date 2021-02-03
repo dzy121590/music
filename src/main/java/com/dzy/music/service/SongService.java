@@ -57,7 +57,7 @@ public interface SongService {
     public List<Song> selectOfName(String name);
 
     /**
-     * 根据男女查询
+     * 根据歌手id查询
      *
      * @param singerId
      * @return
